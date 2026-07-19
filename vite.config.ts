@@ -12,7 +12,12 @@ export default defineConfig({
       server: { entry: "server" },
     }),
     nitro({
-      preset: "netlify"
+      preset: "netlify",
+      output: {
+        dir: ".output",
+        serverDir: ".output/server",
+        publicDir: ".output/public"
+      }
     }),
     tailwindcss(),
     tsconfigPaths({ projects: ["./tsconfig.json"] }),
