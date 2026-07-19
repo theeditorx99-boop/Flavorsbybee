@@ -60,13 +60,13 @@ function AboutPage() {
           </p>
         </div>
         <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
-          <video src="/our-craft.mp4" autoPlay loop muted playsInline preload="auto" className="absolute inset-0 h-full w-full object-cover" />
+          <video src="/our-craft.mp4" autoPlay loop muted playsInline preload="metadata" className="absolute inset-0 h-full w-full object-cover" />
         </div>
       </section>
 
       <section className="container-page grid gap-16 py-24 md:grid-cols-2">
         <div className="relative order-2 aspect-[4/5] overflow-hidden rounded-sm md:order-1">
-          <video src="/cacao.mp4" autoPlay loop muted playsInline preload="auto" className="absolute inset-0 h-full w-full object-cover" />
+          <video src="/cacao.mp4" autoPlay loop muted playsInline preload="metadata" className="absolute inset-0 h-full w-full object-cover" />
         </div>
         <div className="order-1 md:order-2">
           <p className="text-[11px] uppercase tracking-[0.28em] text-accent">Sourcing</p>
@@ -91,7 +91,7 @@ function AboutPage() {
             </p>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
-            <video src="/gifts.mp4" autoPlay loop muted playsInline preload="auto" className="absolute inset-0 h-full w-full object-cover" />
+            <video src="/gifts.mp4" autoPlay loop muted playsInline preload="metadata" className="absolute inset-0 h-full w-full object-cover" />
           </div>
         </div>
       </section>

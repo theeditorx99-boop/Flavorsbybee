@@ -35,13 +35,7 @@ export function ProductCard({ product, compact }: Props) {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 8 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="group flex flex-col"
-    >
+    <div className="group flex flex-col">
       <Link
         to="/products/$handle"
         params={{ handle: p.handle }}
@@ -96,6 +90,6 @@ export function ProductCard({ product, compact }: Props) {
           {formatMoney(price.amount, price.currencyCode)}
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 }

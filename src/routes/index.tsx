@@ -166,6 +166,8 @@ function HomePage() {
                 <img
                   src={c.image}
                   alt={c.title}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
@@ -224,7 +226,7 @@ function HomePage() {
               loop
               muted
               playsInline
-              preload="auto"
+              preload="metadata"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
@@ -277,6 +279,8 @@ function HomePage() {
                   <img
                     src={p.node.images.edges[0]?.node.url}
                     alt={p.node.title}
+                    loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>

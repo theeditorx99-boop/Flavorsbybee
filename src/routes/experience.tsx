@@ -65,11 +65,7 @@ function ExperiencePage() {
           className="absolute inset-0 h-full w-full object-cover opacity-40"
         />
         <div className="container-page relative py-28 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-          >
+          <motion.div>
             <p className="text-[11px] uppercase tracking-[0.32em] text-gold-soft">Experiences</p>
             <h1 className="mt-3 font-display text-5xl md:text-6xl">Come and taste with us.</h1>
             <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
@@ -82,12 +78,8 @@ function ExperiencePage() {
       <section className="container-page py-20">
         <div className="grid gap-6 md:grid-cols-2">
           {experiences.map((ex, i) => (
-            <motion.div
+            <div
               key={ex.title}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.1 }}
               className="group flex gap-6 border border-border bg-card p-8 transition-shadow hover:shadow-md"
             >
               <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-full bg-accent/15 text-accent">
@@ -103,7 +95,7 @@ function ExperiencePage() {
                   {ex.duration}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
